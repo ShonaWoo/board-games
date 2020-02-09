@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular';
+  title = 'Board Games Room';
+
+
+  // searchInput = '';
+
+  // checkIfEnterPressed(event){
+  //   if(event.keyCode === 13){
+  //     this.submitSearch();
+  //   }
+  // }
+
+  // submitSearch(){
+  //   console.log('you said ' + this.searchInput);
+
+  //   //route to list component
+  // }
 }

@@ -1,0 +1,25 @@
+<!-- <div class = "comments-section">
+        
+        <div *ngIf="exisitingComments.length > 0">
+            <mat-card class="comment-card" *ngFor="let c of exisitingComments">
+                <mat-card-header>
+                 <div mat-card-avatar class="profile-avatar"></div>
+                    <mat-card-subtitle>{{c.commenter}}</mat-card-subtitle>
+                    <mat-card-subtitle><p>{{c.content}}</p></mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        
+        </div>
+</div> -->
+
+<div *ngIf="exisitingComments.length > 0" class="container">
+        <mat-card-subtitle>Older Posts</mat-card-subtitle>
+    <mat-card class="comment-card full-width" *ngFor="let c of exisitingComments">
+        <mat-card-header>
+         <div mat-card-avatar class="profile-avatar"></div>
+            <mat-card-subtitle>{{c.commenter}}</mat-card-subtitle>
+            <mat-card-subtitle><p>{{c.content}}</p></mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
+
+</div>

@@ -1,0 +1,20 @@
+mat-card-header{
+    height: 3.8rem;
+}
+
+.avatar{
+    background-size: cover;
+}
+
+mat-icon{
+    
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+mat-card-subtitle.inline{
+    color: blue !important;
+    vertical-align: middle;
+    display: inline-block;
+}

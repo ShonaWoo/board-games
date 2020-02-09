@@ -1,0 +1,21 @@
+mat-grid-tile{
+    padding-bottom: 10px;
+  }
+  
+  .big-image{
+    max-height: 40vh;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  
+  .card {
+    margin-top: 16px;
+    max-height: 80vh;
+    overflow-y: scroll;
+  }
+  
+  .header-image {
+    background-size: cover;
+  }

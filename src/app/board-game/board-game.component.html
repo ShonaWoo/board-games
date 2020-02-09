@@ -1,0 +1,60 @@
+<!-- <mat-grid-list cols="2" rowHeight="20vh">
+  <mat-grid-tile
+      [colspan]="1"
+      [rowspan]="5"
+ >
+    <app-board-game-details [id]="boardgameId"></app-board-game-details>
+  </mat-grid-tile>
+  <mat-grid-tile
+  [colspan]="1"
+  [rowspan]="2"
+  [style.background]="'lightgreen'">
+<app-input-form (formSubmit)="newCommentCreated($event)" [id]="boardgameId"></app-input-form>
+</mat-grid-tile>
+<mat-grid-tile class="scroll"
+[colspan]="1"
+[rowspan]="3"
+[style.background]="'lightpink'">
+<app-comments [boardgameId]="boardgameId" [newCommentId]="newCommentId"></app-comments>
+</mat-grid-tile>
+</mat-grid-list> -->
+
+<table >
+    <td width="50%"><app-board-game-details [id]="boardgameId"></app-board-game-details></td>    
+    <td>
+      <tr><app-input-form (formSubmit)="newCommentCreated($event)" [id]="boardgameId"></app-input-form>
+      </tr>
+      <tr><app-comments [boardgameId]="boardgameId" [newCommentId]="newCommentId"></app-comments>
+      </tr>
+    </td> 
+</table>
+
+<!-- <div *ngIf="boardgame">
+  <mat-grid-list cols="2" rows="1" rowHeight="80vh">
+    <mat-grid-tile>
+        <mat-card class="card">
+            <mat-card-header>
+              <img mat-card-avatar [src]="boardgame.image" class="header-image">
+              <mat-card-title>{{boardgame.name}}</mat-card-title>
+              <mat-card-subtitle>{{boardgame.yearPublished}}</mat-card-subtitle>
+            </mat-card-header>
+                <img mat-card-image class="big-image" [src]="boardgame.image" alt="Photo of Board Game">
+            
+            <mat-card-content>
+              <p style="text-align:justify">
+                {{boardgame.description}}
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-actions>
+          </mat-card>
+
+    </mat-grid-tile>
+    
+    <mat-grid-tile [style.background]="'lightpink'">
+      <app-comments [id]="boardgame.id"></app-comments>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div> -->

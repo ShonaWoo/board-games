@@ -1,0 +1,24 @@
+<div *ngIf="boardgames?.length > 0">
+    <mat-card *ngFor="let bg of boardgames" [routerLink]="'/boardgamedetails/'+bg.id">
+        <mat-card-header>
+            <img mat-card-avatar class="avatar" [src]="bg.thumbnail">
+            <!-- <div mat-card-avatar ></div> -->
+            <mat-card-title>
+                {{bg.name}}
+            </mat-card-title>
+            <mat-card-subtitle><mat-card-subtitle class="inline" color="primary">
+                    <!-- comments <mat-icon [inline]="true">comment</mat-icon> -->
+                    {{bg.avgScore.toFixed(1)}}<mat-icon [inline]="true">star</mat-icon>
+            </mat-card-subtitle>            </mat-card-subtitle>
+
+        </mat-card-header>
+        <mat-card-content><mat-card-subtitle>
+                <mat-chip-list>
+                    <mat-chip *ngFor="let c of bg.boardgameCategories">{{c}}</mat-chip>
+                </mat-chip-list>
+            </mat-card-subtitle></mat-card-content>
+
+        
+    </mat-card>
+
+</div>

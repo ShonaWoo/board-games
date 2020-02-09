@@ -1,0 +1,13 @@
+<div class="wrap">
+    <div class="search">
+        <input [(ngModel)]="searchInput" (keydown)="checkIfEnterPressed($event)" type="text" class="searchTerm"
+            placeholder="Category or Name..." onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Category or Name...'">
+        <button type="submit" class="searchButton">
+            <i class="fa fa-search"></i>
+        </button>
+    </div>
+</div>
+
+<app-search-results [searchInput]="searchInput">
+</app-search-results>
